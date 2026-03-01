@@ -77,7 +77,7 @@ const articleSchema = {
   description:
     'Need a dumpster today? Learn how same-day dumpster rental works, which companies offer it, what it costs, and how to book one in hours.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: {

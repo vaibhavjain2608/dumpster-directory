@@ -67,7 +67,7 @@ const articleSchema = {
   headline: 'How Long Can You Keep a Rental Dumpster? Complete Guide',
   description: 'Standard rental periods, extension fees, long-term rental pricing, and tips for avoiding extra charges.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-long-can-you-keep-a-rental-dumpster' },

@@ -137,7 +137,7 @@ const articleSchema = {
   headline: 'Small Dumpster Rental — 10 & 15 Yard Options Near You (2026)',
   description: 'Compare 10-yard and 15-yard small dumpster rentals. Pricing, dimensions, use cases, and how to find one near you.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/small-dumpster-rental' },

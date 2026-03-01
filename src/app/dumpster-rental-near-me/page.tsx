@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description:
     'Find dumpster rental near you. Compare local companies, get free quotes, and book roll-off dumpster delivery in your area.',
   alternates: { canonical: '/dumpster-rental-near-me' },
+  openGraph: {
+    title: 'Dumpster Rental Near Me | Find Local Companies',
+    description: 'Find dumpster rental near you. Compare local companies, get free quotes, and book roll-off delivery.',
+    images: [{ url: '/api/og?title=Dumpster%20Rental%20Near%20Me&subtitle=Find%20local%20companies%20%C2%B7%20Free%20quotes%20%C2%B7%2031%2C000%2B%20cities', width: 1200, height: 630 }],
+  },
+  twitter: { card: 'summary_large_image' },
 }
 
 const faqSchema = {
@@ -73,7 +79,7 @@ const articleSchema = {
   headline: 'Dumpster Rental Near Me — Find Local Companies',
   description: 'Find dumpster rental companies near you. Compare local prices and get free quotes.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-rental-near-me' },

@@ -96,7 +96,7 @@ const articleSchema = {
   headline: 'Do You Need a Permit for a Dumpster? Complete 2026 Guide',
   description: 'When dumpster permits are required, how to get one, and what it costs — with city-specific guidance.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-rental-permit' },

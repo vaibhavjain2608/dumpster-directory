@@ -79,7 +79,7 @@ const articleSchema = {
   headline: 'Dumpster Weight Limit Calculator: Estimate Your Load Before You Rent',
   description: 'Free tool to calculate debris weight by material type and check against dumpster weight limits to avoid overage fees.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-weight-limit-calculator' },

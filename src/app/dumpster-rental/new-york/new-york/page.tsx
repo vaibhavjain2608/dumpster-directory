@@ -27,7 +27,7 @@ async function getNYCData() {
 
 // --- Metadata ---
 export const metadata: Metadata = {
-  title: 'Dumpster Rental in New York City (March 2026) | All 5 Boroughs',
+  title: 'Dumpster Rental in New York City (2026) | All 5 Boroughs',
   description:
     'Find dumpster rental in NYC — Manhattan, Brooklyn, Queens, Bronx, and Staten Island. Compare local prices ($420–$832), permit requirements, and 5-borough coverage.',
   alternates: {
@@ -49,7 +49,7 @@ const articleSchema = {
   description:
     'Complete guide to dumpster rental in NYC. Borough-by-borough pricing, DOT permit requirements, sizing guidance, and how to book.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: {

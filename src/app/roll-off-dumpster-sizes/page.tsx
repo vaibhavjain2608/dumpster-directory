@@ -67,7 +67,7 @@ const articleSchema = {
   headline: 'Roll-Off Dumpster Sizes: Complete 10 to 40 Yard Guide',
   description: 'Everything about roll-off dumpster sizes including dimensions, weight limits, pricing, and ideal projects for each size.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/roll-off-dumpster-sizes' },

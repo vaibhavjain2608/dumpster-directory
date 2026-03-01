@@ -67,7 +67,7 @@ const articleSchema = {
   headline: '20 Yard vs 30 Yard Dumpster: Which Size Do You Need?',
   description: 'Side-by-side comparison of 20-yard and 30-yard dumpsters including dimensions, pricing, weight limits, and ideal projects.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/20-yard-dumpster-vs-30-yard-dumpster' },

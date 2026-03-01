@@ -141,7 +141,7 @@ const articleSchema = {
   headline: 'What Can You Put in a Dumpster? Allowed & Prohibited Items',
   description: 'Complete list of items accepted and prohibited in rental dumpsters — furniture, appliances, construction debris, hazardous materials.',
   datePublished: '2026-02-23',
-  dateModified: '2026-02-23',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/what-can-you-put-in-a-dumpster' },

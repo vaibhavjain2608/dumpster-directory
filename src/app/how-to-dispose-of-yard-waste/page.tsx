@@ -205,7 +205,7 @@ const articleSchema = {
   headline: 'How to Dispose of Yard Waste: 6 Options Compared',
   description: 'Compare curbside pickup, composting, green waste facilities, wood chippers, and dumpster rental for yard waste disposal.',
   datePublished: '2026-02-23',
-  dateModified: '2026-02-23',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-yard-waste' },

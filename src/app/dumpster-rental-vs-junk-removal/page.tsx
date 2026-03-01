@@ -209,7 +209,7 @@ const articleSchema = {
   headline: 'Dumpster Rental vs Junk Removal: Which Should You Choose?',
   description: 'A complete comparison of dumpster rental and junk removal — costs, pros, cons, and best use cases for each.',
   datePublished: '2026-02-23',
-  dateModified: '2026-02-23',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-rental-vs-junk-removal' },

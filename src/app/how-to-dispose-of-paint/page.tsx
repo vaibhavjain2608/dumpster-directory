@@ -238,7 +238,7 @@ const articleSchema = {
   headline: 'How to Dispose of Old Paint (Latex & Oil-Based)',
   description: 'Complete guide to paint disposal — PaintCare drop-off programs, drying latex paint, HHW facilities, donation options, and what can go in a dumpster.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-paint' },

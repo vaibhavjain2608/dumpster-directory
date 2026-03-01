@@ -262,7 +262,7 @@ const articleSchema = {
   headline: 'How to Dispose of an Old Mattress',
   description: 'Complete guide to mattress disposal — free programs, retailer take-back, donation, junk removal, and dumpster rental for large cleanouts.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-mattress' },

@@ -23,7 +23,7 @@ const articleSchema = {
   description:
     'Analysis of dumpster rental pricing across 960 US cities reveals an 85% price gap between the most and least expensive markets.',
   datePublished: '2026-02-26',
-  dateModified: '2026-02-26',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-rental-cost-by-city' },

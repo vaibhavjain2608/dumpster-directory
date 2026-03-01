@@ -137,7 +137,7 @@ const articleSchema = {
   headline: 'Large Dumpster Rental — 20, 30 & 40 Yard Options Near You (2026)',
   description: 'Compare 20-yard, 30-yard, and 40-yard large dumpster rentals. Pricing, dimensions, use cases, and how to find one near you.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/large-dumpster-rental' },

@@ -207,7 +207,7 @@ const articleSchema = {
   headline: 'How to Dispose of Concrete: 6 Methods + Cost & Weight Guide',
   description: 'Complete guide to concrete disposal — recycling centers, dumpster rental with weight limits, junk removal, and free giveaway options.',
   datePublished: '2026-02-23',
-  dateModified: '2026-02-26',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-concrete' },

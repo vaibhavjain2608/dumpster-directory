@@ -77,7 +77,7 @@ const articleSchema = {
   description:
     'Commercial dumpster rental for contractors — bulk pricing, recurring rentals, weight capacity, approved debris types, and how to set up an account with local haulers.',
   datePublished: '2026-02-24',
-  dateModified: '2026-02-24',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: {

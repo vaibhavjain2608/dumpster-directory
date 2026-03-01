@@ -196,7 +196,7 @@ const articleSchema = {
   headline: 'How to Dispose of Old Furniture: 6 Options Compared',
   description: 'Compare all furniture disposal options — free donation pickup, selling online, junk removal, and dumpster rental — by cost, effort, and speed.',
   datePublished: '2026-02-23',
-  dateModified: '2026-02-23',
+  dateModified: '2026-03-01',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-furniture' },
