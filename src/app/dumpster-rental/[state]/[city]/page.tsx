@@ -25,7 +25,7 @@ async function getCityData(stateSlug: string, citySlug: string) {
   const [businesses, pricing, nearby] = await Promise.all([
     getBusinessesByCity(city.id),
     getCityPricing(city.id),
-    getNearbyCities(city.id, city.latitude, city.longitude, 5),
+    getNearbyCities(city.id, city.latitude, city.longitude, 8),
   ])
 
   return { city, businesses, pricing, nearby }
@@ -63,8 +63,6 @@ export async function generateMetadata({
   return {
     title,
     description,
-    // Noindex cities with no listings — prevents thin content deindexing
-    ...(bizCount === 0 && { robots: { index: false, follow: true } }),
     alternates: {
       canonical: `/dumpster-rental/${state}/${city}`,
     },
