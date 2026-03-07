@@ -15,7 +15,7 @@ const TOP_STATES = [
 ]
 
 const TOP_CITIES = [
-  { name: 'New York, NY', state: 'new-york', city: 'new-york-city' },
+  { name: 'New York, NY', state: 'new-york', city: 'new-york' },
   { name: 'Los Angeles, CA', state: 'california', city: 'los-angeles' },
   { name: 'Chicago, IL', state: 'illinois', city: 'chicago' },
   { name: 'Houston, TX', state: 'texas', city: 'houston' },

@@ -645,7 +645,7 @@ export default async function NYCDumpsterRentalPage() {
                 {[
                   { label: 'How to Dispose of Concrete', href: '/how-to-dispose-of-concrete' },
                   { label: 'How to Dispose of Electronics', href: '/how-to-dispose-of-electronics' },
-                  { label: 'How to Dispose of a Mattress', href: '/how-to-dispose-of-a-mattress' },
+                  { label: 'How to Dispose of a Mattress', href: '/how-to-dispose-of-mattress' },
                   { label: 'How to Dispose of Paint', href: '/how-to-dispose-of-paint' },
                 ].map((guide) => (
                   <Link key={guide.href}

@@ -329,7 +329,7 @@ export default function HowToDisposeOfYardWastePage() {
               { label: 'Dumpster Size Estimator', href: '/dumpster-size-estimator', desc: 'Find the right size for your landscaping project' },
               { label: 'What Can You Put in a Dumpster?', href: '/what-can-you-put-in-a-dumpster', desc: 'Full list of allowed and prohibited items' },
               { label: 'Dumpster Rental vs Junk Removal', href: '/dumpster-rental-vs-junk-removal', desc: 'Compare costs and convenience' },
-              { label: 'Landscaping Dumpster Rental', href: '/dumpster-rental/landscaping', desc: 'Find local landscaping dumpster providers' },
+              { label: 'Dumpster Rental Near Me', href: '/dumpster-rental-near-me', desc: 'Find local dumpster rental providers' },
             ].map((link) => (
               <Link key={link.href} href={link.href}
                 className="flex items-start gap-3 rounded-lg border border-gray-200 bg-white p-3 hover:border-green-300 transition group">

@@ -163,7 +163,9 @@ export default async function CityPage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
+      {businesses.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
+      )}
 
       {/* Hero */}
       <div className="bg-white border-b border-gray-100">
@@ -314,7 +316,7 @@ export default async function CityPage({
                 {[
                   { label: 'How to Dispose of Concrete', href: '/how-to-dispose-of-concrete' },
                   { label: 'How to Dispose of Electronics', href: '/how-to-dispose-of-electronics' },
-                  { label: 'How to Dispose of a Mattress', href: '/how-to-dispose-of-a-mattress' },
+                  { label: 'How to Dispose of a Mattress', href: '/how-to-dispose-of-mattress' },
                   { label: 'How to Dispose of Paint', href: '/how-to-dispose-of-paint' },
                 ].map((guide) => (
                   <Link key={guide.href}

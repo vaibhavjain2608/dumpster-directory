@@ -191,18 +191,18 @@ const HIDDEN_FEES = [
 ]
 
 const POPULAR_CITIES = [
-  { name: 'Houston, TX', state: 'tx', city: 'houston' },
-  { name: 'Phoenix, AZ', state: 'az', city: 'phoenix' },
-  { name: 'Chicago, IL', state: 'il', city: 'chicago' },
-  { name: 'Dallas, TX', state: 'tx', city: 'dallas' },
-  { name: 'Atlanta, GA', state: 'ga', city: 'atlanta' },
-  { name: 'Miami, FL', state: 'fl', city: 'miami' },
-  { name: 'Denver, CO', state: 'co', city: 'denver' },
-  { name: 'Charlotte, NC', state: 'nc', city: 'charlotte' },
-  { name: 'Columbus, OH', state: 'oh', city: 'columbus' },
-  { name: 'Las Vegas, NV', state: 'nv', city: 'las-vegas' },
-  { name: 'Nashville, TN', state: 'tn', city: 'nashville' },
-  { name: 'Sacramento, CA', state: 'ca', city: 'sacramento' },
+  { name: 'Houston, TX', state: 'texas', city: 'houston' },
+  { name: 'Phoenix, AZ', state: 'arizona', city: 'phoenix' },
+  { name: 'Chicago, IL', state: 'illinois', city: 'chicago' },
+  { name: 'Dallas, TX', state: 'texas', city: 'dallas' },
+  { name: 'Atlanta, GA', state: 'georgia', city: 'atlanta' },
+  { name: 'Miami, FL', state: 'florida', city: 'miami' },
+  { name: 'Denver, CO', state: 'colorado', city: 'denver' },
+  { name: 'Charlotte, NC', state: 'north-carolina', city: 'charlotte' },
+  { name: 'Columbus, OH', state: 'ohio', city: 'columbus' },
+  { name: 'Las Vegas, NV', state: 'nevada', city: 'las-vegas' },
+  { name: 'Nashville, TN', state: 'tennessee', city: 'nashville' },
+  { name: 'Sacramento, CA', state: 'california', city: 'sacramento' },
 ]
 
 const faqSchema = {
