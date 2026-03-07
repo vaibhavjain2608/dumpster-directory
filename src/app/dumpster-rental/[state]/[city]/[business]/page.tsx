@@ -32,7 +32,9 @@ export async function generateMetadata({
 
   const cityName  = biz.city?.city_name ?? titleCase(city)
   const stateName = STATE_NAMES[state] ?? titleCase(state)
-  const title       = `${biz.name} — Dumpster Rental in ${cityName}, ${stateName}`
+  const stateAbbr = Object.entries(STATE_NAMES).find(([, v]) => v === stateName)?.[0]?.toUpperCase() ?? ''
+  const fullTitle   = `${biz.name} — Dumpster Rental in ${cityName}, ${stateAbbr}`
+  const title       = fullTitle.length <= 60 ? fullTitle : `${biz.name} — ${cityName}, ${stateAbbr} Dumpster Rental`
   const description = `${biz.name} offers dumpster rental services in ${cityName}, ${stateName}.${biz.rating ? ` Rated ${biz.rating}/5 from ${biz.review_count} reviews.` : ''} Get a free quote today.`
 
   return {

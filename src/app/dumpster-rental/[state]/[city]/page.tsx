@@ -48,12 +48,14 @@ export async function generateMetadata({
   // Dynamic title: include business count + lowest price when available, keep under 60 chars
   const bizCount = businesses.length
   const tenYd = pricing.find((p: { size_yards: number }) => p.size_yards === 10)
+  const baseTitle = `Dumpster Rental in ${c.city_name}, ${c.state}`
   const priceFrom = tenYd ? ` · from $${tenYd.price_low}` : ''
+  const withBiz = `${baseTitle} | ${bizCount} Companies${priceFrom}`
   const title = bizCount > 0
-    ? `Dumpster Rental in ${c.city_name}, ${c.state} | ${bizCount} Companies${priceFrom}`
+    ? (withBiz.length <= 60 ? withBiz : `${baseTitle} | ${bizCount} Companies`)
     : tenYd
-      ? `Dumpster Rental in ${c.city_name}, ${c.state} | Prices from $${tenYd.price_low}`
-      : `Dumpster Rental in ${c.city_name}, ${c.state} | Compare & Get Free Quotes`
+      ? `${baseTitle} | Prices from $${tenYd.price_low}`
+      : `${baseTitle} | Compare & Get Free Quotes`
 
   // Dynamic description: include pricing if available
   const twentyYd = pricing.find((p: { size_yards: number }) => p.size_yards === 20)

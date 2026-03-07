@@ -6,12 +6,12 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { getPopularCities } from '@/lib/supabase'
 
 export const metadata: Metadata = {
-  title: 'Dumpster Rental Near Me — Compare Prices & Get Free Quotes (2026)',
+  title: 'Dumpster Rental Near Me — Prices & Free Quotes (2026)',
   description:
     'Find the cheapest dumpster rental near you. Compare local companies, see prices from $275, and get free quotes. Same-day delivery available in most areas.',
   alternates: { canonical: 'https://dumpsterlisting.com/dumpster-rental-near-me' },
   openGraph: {
-    title: 'Dumpster Rental Near Me — Compare Prices & Get Free Quotes (2026)',
+    title: 'Dumpster Rental Near Me — Prices & Free Quotes (2026)',
     description: 'Find the cheapest dumpster rental near you. Compare local companies, see prices from $275, and get free quotes.',
     images: [{ url: '/api/og?title=Dumpster%20Rental%20Near%20Me&subtitle=Find%20local%20companies%20%C2%B7%20Free%20quotes%20%C2%B7%2031%2C000%2B%20cities', width: 1200, height: 630 }],
   },
