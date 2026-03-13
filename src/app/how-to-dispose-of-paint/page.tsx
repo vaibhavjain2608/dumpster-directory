@@ -4,10 +4,10 @@ import { ArrowRight } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'How to Dispose of Old Paint — Latex & Oil-Based (2026)',
+  title: 'How to Dispose of Old Paint | Latex & Oil-Based | DumpsterListing',
   description:
     'Proper paint disposal for latex and oil-based paint — free drop-off programs, drying out latex paint, and when you need a hazmat contractor.',
-  alternates: { canonical: 'https://dumpsterlisting.com/how-to-dispose-of-paint' },
+  alternates: { canonical: '/how-to-dispose-of-paint' },
   openGraph: {
     title: 'How to Dispose of Old Paint (Latex & Oil-Based)',
     description: 'PaintCare drop-off locations, drying out latex paint for trash disposal, HHW facilities, and donation options — all paint disposal methods compared.',
@@ -238,7 +238,7 @@ const articleSchema = {
   headline: 'How to Dispose of Old Paint (Latex & Oil-Based)',
   description: 'Complete guide to paint disposal — PaintCare drop-off programs, drying latex paint, HHW facilities, donation options, and what can go in a dumpster.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-paint' },

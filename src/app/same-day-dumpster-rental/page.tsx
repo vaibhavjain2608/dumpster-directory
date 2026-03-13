@@ -4,12 +4,12 @@ import { ArrowRight, CheckCircle, AlertTriangle, Clock } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Same-Day Dumpster Rental: How to Get One Fast (2026)',
+  title: 'Same-Day Dumpster Rental: How to Get One Fast | DumpsterListing',
   description:
     'Need a dumpster today? Learn how same-day dumpster rental works, which companies offer it, what it costs, and how to book one in hours.',
-  alternates: { canonical: 'https://dumpsterlisting.com/same-day-dumpster-rental' },
+  alternates: { canonical: '/same-day-dumpster-rental' },
   openGraph: {
-    title: 'Same-Day Dumpster Rental: How to Get One Fast (2026)',
+    title: 'Same-Day Dumpster Rental: How to Get One Fast | DumpsterListing',
     description:
       'Need a dumpster today? Learn how same-day dumpster rental works, which companies offer it, what it costs, and how to book one in hours.',
   },
@@ -77,7 +77,7 @@ const articleSchema = {
   description:
     'Need a dumpster today? Learn how same-day dumpster rental works, which companies offer it, what it costs, and how to book one in hours.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: {

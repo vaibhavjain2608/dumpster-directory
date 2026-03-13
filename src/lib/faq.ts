@@ -25,10 +25,6 @@ export function getCityFAQs(cityName: string, state: string) {
       question: `How do I find the cheapest dumpster rental in ${cityName}?`,
       answer: `The best way to find cheap dumpster rental in ${cityName} is to compare quotes from multiple local companies — which is exactly what our free quote form does. Avoid overpaying by sizing correctly (renting too large is wasteful), asking about any hidden fees (fuel surcharges, overage charges), and booking early for non-urgent projects.`,
     },
-    {
-      question: `What is the smallest dumpster available to rent in ${cityName}?`,
-      answer: `The smallest dumpster commonly rented in ${cityName} is a 10-yard roll-off, which measures roughly 12 feet long × 7.5 feet wide × 4 feet high. It holds about 3–4 pickup truck loads of debris — ideal for a bathroom remodel, deck removal, or cleanout of a single room. Some companies also offer mini dumpsters (2–6 yards) for very small projects. For most residential cleanouts, the 10-yard is the right starting point.`,
-    },
   ]
 }
 

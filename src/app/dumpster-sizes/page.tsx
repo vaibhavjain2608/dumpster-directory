@@ -7,10 +7,10 @@ import SizeComparisonInfographic from '@/components/infographics/SizeComparisonI
 import WeightLimitsInfographic from '@/components/infographics/WeightLimitsInfographic'
 
 export const metadata: Metadata = {
-  title: 'Dumpster Sizes Guide (2026) — 10 to 40 Yard Dimensions',
+  title: 'Dumpster Sizes & Dimensions Guide (2026) — 10, 15, 20, 30, 40 Yard',
   description:
     'Not sure what size dumpster you need? Compare 10, 15, 20, 30, and 40 yard dumpsters — dimensions, capacity, pricing, and what each size is best for.',
-  alternates: { canonical: 'https://dumpsterlisting.com/dumpster-sizes' },
+  alternates: { canonical: '/dumpster-sizes' },
   openGraph: {
     title: 'Dumpster Sizes & Dimensions Guide (2026)',
     description: 'Compare 10–40 yard roll-off dumpster sizes, pricing, and use cases.',
@@ -94,7 +94,7 @@ const schema = {
     '@type': 'ListItem',
     position: i + 1,
     name: `${s.yards} Yard Dumpster`,
-    url: `https://dumpsterlisting.com/dumpster-sizes/${s.slug}`,
+    url: `/dumpster-sizes/${s.slug}`,
   })),
 }
 

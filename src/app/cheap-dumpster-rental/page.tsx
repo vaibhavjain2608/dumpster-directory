@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Cheap Dumpster Rental Near Me — Affordable Prices (2026)',
   description:
     'Find the cheapest dumpster rental near you. Compare affordable options from $200/week for 10-yard bins. See prices by size, 8 money-saving tips, and how to avoid hidden fees.',
-  alternates: { canonical: 'https://dumpsterlisting.com/cheap-dumpster-rental' },
+  alternates: { canonical: '/cheap-dumpster-rental' },
   openGraph: {
     title: 'Cheap Dumpster Rental Near Me — Affordable Prices (2026)',
     description:
@@ -250,7 +250,7 @@ const articleSchema = {
   headline: 'Cheap Dumpster Rental Near Me — Affordable Prices (2026)',
   description: 'Find the cheapest dumpster rental near you. Compare affordable options and see 8 money-saving tips.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/cheap-dumpster-rental' },

@@ -78,18 +78,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
-    {
-      url: `${BASE_URL}/about`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.4,
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.4,
-    },
     // Calculators
     {
       url: `${BASE_URL}/dumpster-size-estimator`,
@@ -209,16 +197,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: `${BASE_URL}/rent-a-dumpster`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
   ]
 
   // ── Dumpster-size detail pages ───────────────────────────────────────────────
-  const sizePages: MetadataRoute.Sitemap = [2, 3, 10, 12, 15, 20, 30, 40].map((size) => ({
+  const sizePages: MetadataRoute.Sitemap = [10, 15, 20, 30, 40].map((size) => ({
     url: `${BASE_URL}/dumpster-sizes/${size}-yard`,
     lastModified: now,
     changeFrequency: 'monthly' as const,

@@ -25,7 +25,7 @@ async function getCityData(stateSlug: string, citySlug: string) {
   const [businesses, pricing, nearby] = await Promise.all([
     getBusinessesByCity(city.id),
     getCityPricing(city.id),
-    getNearbyCities(city.id, city.latitude, city.longitude, 8),
+    getNearbyCities(city.id, city.latitude, city.longitude, 5),
   ])
 
   return { city, businesses, pricing, nearby }
@@ -45,17 +45,11 @@ export async function generateMetadata({
   const { city: c, businesses, pricing } = data
   const stateName = STATE_NAMES[state] ?? titleCase(state)
 
-  // Dynamic title: include business count + lowest price when available, keep under 60 chars
+  // Dynamic title: include business count when available, keep under 60 chars
   const bizCount = businesses.length
-  const tenYd = pricing.find((p: { size_yards: number }) => p.size_yards === 10)
-  const baseTitle = `Dumpster Rental in ${c.city_name}, ${c.state}`
-  const priceFrom = tenYd ? ` · from $${tenYd.price_low}` : ''
-  const withBiz = `${baseTitle} | ${bizCount} Companies${priceFrom}`
   const title = bizCount > 0
-    ? (withBiz.length <= 60 ? withBiz : `${baseTitle} | ${bizCount} Companies`)
-    : tenYd
-      ? `${baseTitle} | Prices from $${tenYd.price_low}`
-      : `${baseTitle} | Compare & Get Free Quotes`
+    ? `Dumpster Rental in ${c.city_name}, ${c.state} | ${bizCount} Local Companies`
+    : `Dumpster Rental in ${c.city_name}, ${c.state} | Compare & Get Free Quotes`
 
   // Dynamic description: include pricing if available
   const twentyYd = pricing.find((p: { size_yards: number }) => p.size_yards === 20)
@@ -64,20 +58,18 @@ export async function generateMetadata({
     : ' 10–40 yard roll-off dumpsters available.'
   const description = bizCount > 0
     ? `Compare ${bizCount} dumpster rental companies in ${c.city_name}, ${stateName}.${priceSnippet} Free quotes, 7-day rental included.`
-    : tenYd
-      ? `Dumpster rental in ${c.city_name}, ${stateName} from $${tenYd.price_low}.${priceSnippet} Compare local roll-off companies and get free quotes.`
-      : `Find dumpster rental companies in ${c.city_name}, ${stateName}.${priceSnippet} Free quotes from local providers — no obligation.`
+    : `Find dumpster rental companies in ${c.city_name}, ${stateName}.${priceSnippet} Free quotes from local providers — no obligation.`
 
   return {
     title,
     description,
     alternates: {
-      canonical: `https://dumpsterlisting.com/dumpster-rental/${state}/${city}`,
+      canonical: `/dumpster-rental/${state}/${city}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://dumpsterlisting.com/dumpster-rental/${state}/${city}`,
+      url: `/dumpster-rental/${state}/${city}`,
       images: [{
         url: `/api/og?title=${encodeURIComponent(`Dumpster Rental in ${c.city_name}, ${c.state}`)}&subtitle=${encodeURIComponent(`Compare ${businesses.length} local companies · Free quotes`)}`,
         width: 1200,

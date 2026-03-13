@@ -4,10 +4,10 @@ import { ArrowRight } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'How to Dispose of Electronics & E-Waste (2026)',
+  title: 'How to Dispose of Electronics (E-Waste) | DumpsterListing',
   description:
     'Learn how to properly dispose of old electronics, TVs, computers, and phones. Find free e-waste recycling near you — and when a dumpster rental makes sense.',
-  alternates: { canonical: 'https://dumpsterlisting.com/how-to-dispose-of-electronics' },
+  alternates: { canonical: '/how-to-dispose-of-electronics' },
   openGraph: {
     title: 'How to Dispose of Old Electronics & E-Waste',
     description: 'Free retailer drop-off programs, manufacturer take-back, municipal e-waste events, and when a dumpster rental makes sense for large cleanouts.',
@@ -238,7 +238,7 @@ const articleSchema = {
   headline: 'How to Dispose of Old Electronics & E-Waste',
   description: 'Complete guide to e-waste disposal — free retailer programs, manufacturer take-back, municipal events, certified recyclers, and when a dumpster makes sense.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-electronics' },

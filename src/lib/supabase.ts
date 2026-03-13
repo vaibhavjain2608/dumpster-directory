@@ -56,18 +56,9 @@ export async function getAllStates() {
   })
 }
 
-export async function getNearbyCities(cityId: number, lat: number, lng: number, limit = 8) {
-  const delta = 1.5 // ~100 mile bounding box
+export async function getNearbyCities(cityId: number, lat: number, lng: number, limit = 6) {
   const { data } = await getClient()
-    .from('cities')
-    .select('id, city_name, city_slug, state_slug, state, population')
-    .neq('id', cityId)
-    .gte('latitude', lat - delta)
-    .lte('latitude', lat + delta)
-    .gte('longitude', lng - delta)
-    .lte('longitude', lng + delta)
-    .order('population', { ascending: false })
-    .limit(limit)
+    .rpc('nearby_cities', { city_id: cityId, lat, lng, limit_count: limit })
   return data || []
 }
 

@@ -5,16 +5,14 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { formatPrice, DEFAULT_PRICING } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Dumpster Rental Cost (2026) | Prices by Size, City & Project',
+  title: 'Dumpster Rental Cost [2026]: Prices by Size, City & Project Type | DumpsterListing',
   description:
     '2026 dumpster rental prices by size, city, debris type, and duration. Includes overage fees, permit costs, and a junk removal comparison.',
-  alternates: { canonical: 'https://dumpsterlisting.com/dumpster-rental-cost' },
+  alternates: { canonical: '/dumpster-rental-cost' },
   openGraph: {
     title: 'Dumpster Rental Cost Guide (2026)',
     description: 'National average prices by size, cost factors, and money-saving tips.',
-    images: [{ url: '/api/og?title=Dumpster%20Rental%20Cost%20Guide%20(2026)&subtitle=Prices%20by%20size%2C%20city%20%26%20project%20type', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image' },
 }
 
 const SIZE_DETAILS = [
@@ -104,7 +102,7 @@ const articleSchema = {
   headline: 'Dumpster Rental Cost [2026]: Prices by Size, City & Project Type',
   description: 'Dumpster rental costs $275–$750 nationally. This guide breaks down pricing by size, cost factors, and money-saving tips.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-rental-cost' },

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | DumpsterListing',
   description:
     'Learn how DumpsterListing collects, uses, and protects your personal information when you use our dumpster rental directory.',
-  alternates: { canonical: 'https://dumpsterlisting.com/privacy' },
+  alternates: { canonical: '/privacy' },
   openGraph: {
     title: 'Privacy Policy | DumpsterListing',
     description:

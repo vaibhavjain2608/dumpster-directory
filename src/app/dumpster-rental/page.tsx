@@ -5,10 +5,10 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import { STATE_NAMES } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Dumpster Rental Near Me — Compare & Get Quotes (2026)',
+  title: 'Dumpster Rental Near Me — Compare Local Companies & Prices (2026)',
   description:
     'Find dumpster rental companies in any US city. Compare prices on 10, 20, 30, and 40 yard roll-off dumpsters. Free quotes from local providers in 31,000+ cities.',
-  alternates: { canonical: 'https://dumpsterlisting.com/dumpster-rental' },
+  alternates: { canonical: '/dumpster-rental' },
   openGraph: {
     title: 'Dumpster Rental Near Me — Compare Local Companies & Prices',
     description: 'The largest directory of dumpster rental companies in the US. Find local providers, compare prices, and get free quotes for any project.',
@@ -116,12 +116,11 @@ export default function NationalDirectoryPage() {
             { label: 'Dumpster Rental' },
           ]} />
           <h1 className="mt-4 text-3xl sm:text-4xl font-extrabold text-gray-900">
-            Dumpster Rental — Compare Local Companies &amp; Prices
+            Find Dumpster Rental Companies Near You
           </h1>
           <p className="mt-3 max-w-2xl text-gray-600 leading-relaxed">
-            Find and compare dumpster rental companies in any US city. Get free quotes on 10–40 yard
+            Compare dumpster rental prices from local companies in any US city. Get free quotes on 10–40 yard
             roll-off dumpsters for home cleanouts, renovations, roofing, and construction projects.
-            We cover 31,000+ cities nationwide.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -148,7 +147,7 @@ export default function NationalDirectoryPage() {
             { stat: '31,000+', label: 'Cities covered', icon: MapPin },
             { stat: 'Free', label: 'Quote requests', icon: DollarSign },
             { stat: '10–40 yd', label: 'Dumpster sizes', icon: Truck },
-            { stat: '3,100+', label: 'Companies listed', icon: BarChart2 },
+            { stat: 'Local only', label: 'Companies listed', icon: BarChart2 },
           ].map(({ stat, label, icon: Icon }) => (
             <div key={label} className="rounded-xl border border-gray-200 bg-white p-5 text-center">
               <Icon className="h-6 w-6 text-green-700 mx-auto mb-2" />
@@ -289,43 +288,6 @@ export default function NationalDirectoryPage() {
                 <span className="text-xs font-semibold text-green-700 bg-green-50 rounded-full px-2.5 py-1">{item.size}</span>
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* Complete Guide */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-5">The Complete Guide to Renting a Dumpster</h2>
-          <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 space-y-4 text-sm text-gray-600 leading-relaxed">
-            <p>
-              Renting a dumpster is straightforward: you choose a size, schedule delivery, fill it up, and call for pickup.
-              Most rental companies deliver a roll-off container to your driveway or job site within 24 hours of booking.
-              You typically get 7 to 14 days to fill it, though extensions are available for an additional daily fee.
-              Once you&apos;re done, the hauler picks it up and takes it to a licensed transfer station or landfill.
-            </p>
-            <p>
-              Pricing is almost always bundled — your quote includes delivery, pickup, a set number of rental days, and a
-              weight allowance (usually 2 to 4 tons depending on dumpster size). The only surprise charges come from going
-              over your weight limit or tossing prohibited items like tires, batteries, or hazardous chemicals.
-              Always ask about overage fees upfront so you can budget accurately.
-            </p>
-            <p>
-              Local haulers tend to offer better prices and more flexible scheduling than national chains. A locally owned
-              company can often do same-day or next-day delivery because they have shorter routes and smaller fleets to
-              coordinate. National brands like Waste Management or Republic Services offer reliability and wider coverage,
-              but their pricing is typically 15–25% higher for the same container.
-            </p>
-            <p>
-              For smaller cleanouts — a single room, a garage, or a small bathroom remodel — consider whether a dumpster
-              rental or junk removal service makes more sense. Junk removal crews load everything for you, but they charge
-              by volume and the total cost is often double what a dumpster rental costs for the same amount of debris.
-              If you can load the container yourself, a rental is almost always the more economical choice.
-            </p>
-            <p>
-              The most common mistakes renters make: ordering too small a dumpster (upgrading mid-project costs more than
-              ordering the next size up), exceeding the weight limit with heavy materials like concrete or dirt, and
-              placing prohibited items in the container. When in doubt, call your hauler — most are happy to help you
-              choose the right size and explain what&apos;s allowed.
-            </p>
           </div>
         </section>
 

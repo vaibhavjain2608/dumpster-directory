@@ -4,10 +4,10 @@ import { ArrowRight } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'How to Dispose of a Mattress: Free & Paid Options',
+  title: 'How to Dispose of a Mattress | Free & Paid Options | DumpsterListing',
   description:
     'The cheapest ways to get rid of an old mattress — free pickup programs, retailer take-back, donation, recycling, and when to use a dumpster rental.',
-  alternates: { canonical: 'https://dumpsterlisting.com/how-to-dispose-of-mattress' },
+  alternates: { canonical: '/how-to-dispose-of-mattress' },
   openGraph: {
     title: 'How to Dispose of an Old Mattress: Free & Paid Options',
     description: 'Bye Bye Mattress, retailer take-back, donation, junk removal, and dumpster rental — compare every option for getting rid of a mattress.',
@@ -262,7 +262,7 @@ const articleSchema = {
   headline: 'How to Dispose of an Old Mattress',
   description: 'Complete guide to mattress disposal — free programs, retailer take-back, donation, junk removal, and dumpster rental for large cleanouts.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-mattress' },

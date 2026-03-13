@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'Large Dumpster Rental — 20, 30 & 40 Yard Roll-Off Options (2026)',
   description:
     'Rent a large dumpster for whole-home renovations, new construction, commercial cleanouts, and large roofing jobs. Compare 20-yard, 30-yard, and 40-yard roll-off options, pricing ($375–$750), dimensions, and find large dumpster rental near you.',
-  alternates: { canonical: 'https://dumpsterlisting.com/large-dumpster-rental' },
+  alternates: { canonical: '/large-dumpster-rental' },
   openGraph: {
     title: 'Large Dumpster Rental — 20, 30 & 40 Yard Roll-Off Options (2026)',
     description:
@@ -137,7 +137,7 @@ const articleSchema = {
   headline: 'Large Dumpster Rental — 20, 30 & 40 Yard Options Near You (2026)',
   description: 'Compare 20-yard, 30-yard, and 40-yard large dumpster rentals. Pricing, dimensions, use cases, and how to find one near you.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/large-dumpster-rental' },

@@ -1,28 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import type { Metadata } from 'next'
 import { Search, Star, FileText, Truck, Shield, Clock, MapPin, ArrowRight, CheckCircle } from 'lucide-react'
 import { STATE_NAMES } from '@/lib/utils'
 import { getPopularCities } from '@/lib/supabase'
 import HowItWorksInfographic from '@/components/infographics/HowItWorksInfographic'
-
-const SITE = 'https://dumpsterlisting.com'
-
-export const metadata: Metadata = {
-  title: 'DumpsterListing — Find Dumpster Rental Companies Near You',
-  description:
-    'Compare dumpster rental prices from 3,600+ local companies across 31,000 US cities. Get free quotes for 10, 20, 30, and 40 yard roll-off dumpsters.',
-  alternates: {
-    canonical: SITE,
-  },
-  openGraph: {
-    title: 'DumpsterListing — Find Dumpster Rental Companies Near You',
-    description:
-      'Compare dumpster rental prices from 3,600+ local companies. Free quotes for 10–40 yard roll-off dumpsters.',
-    url: SITE,
-    type: 'website',
-  },
-}
 
 export default async function Home() {
   const popularCities = await getPopularCities(10)

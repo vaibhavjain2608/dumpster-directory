@@ -4,10 +4,10 @@ import { ArrowRight, CheckCircle, XCircle } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Dumpster Rental vs Junk Removal: Full Comparison (2026)',
+  title: 'Dumpster Rental vs Junk Removal: Which Should You Choose? (2026)',
   description:
     'Dumpster rental or junk removal — which is cheaper and better for your project? Compare costs, convenience, and use cases to make the right choice.',
-  alternates: { canonical: 'https://dumpsterlisting.com/dumpster-rental-vs-junk-removal' },
+  alternates: { canonical: '/dumpster-rental-vs-junk-removal' },
   openGraph: {
     title: 'Dumpster Rental vs Junk Removal: Full Comparison (2026)',
     description: 'Compare costs, pros, cons, and best use cases for dumpster rental vs junk removal. Find out which saves more money for your project.',
@@ -209,7 +209,7 @@ const articleSchema = {
   headline: 'Dumpster Rental vs Junk Removal: Which Should You Choose?',
   description: 'A complete comparison of dumpster rental and junk removal — costs, pros, cons, and best use cases for each.',
   datePublished: '2026-02-23',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-23',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-rental-vs-junk-removal' },

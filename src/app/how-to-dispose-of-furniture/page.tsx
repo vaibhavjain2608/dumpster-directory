@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'How to Dispose of Furniture: 6 Options (Free & Paid) (2026)',
   description:
     'Learn the best ways to get rid of old furniture — from free donation pickup to dumpster rental. Compare costs, effort, and timelines for each option.',
-  alternates: { canonical: 'https://dumpsterlisting.com/how-to-dispose-of-furniture' },
+  alternates: { canonical: '/how-to-dispose-of-furniture' },
   openGraph: {
     title: 'How to Dispose of Old Furniture: 6 Options Compared',
     description: 'Free donation pickup, selling, junk removal, dumpster rental — compare all furniture disposal options by cost, effort, and speed.',
@@ -196,7 +196,7 @@ const articleSchema = {
   headline: 'How to Dispose of Old Furniture: 6 Options Compared',
   description: 'Compare all furniture disposal options — free donation pickup, selling online, junk removal, and dumpster rental — by cost, effort, and speed.',
   datePublished: '2026-02-23',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-23',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-furniture' },

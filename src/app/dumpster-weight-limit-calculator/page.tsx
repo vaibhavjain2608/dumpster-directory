@@ -5,10 +5,10 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import WeightLimitCalculator from './WeightLimitCalculator'
 
 export const metadata: Metadata = {
-  title: 'Dumpster Weight Limit Calculator (2026)',
+  title: 'Dumpster Weight Limit Calculator — Estimate Your Load (2026)',
   description:
     "Calculate whether your debris will exceed your dumpster's weight limit. Instantly estimate weight by material type and see potential overage fees.",
-  alternates: { canonical: 'https://dumpsterlisting.com/dumpster-weight-limit-calculator' },
+  alternates: { canonical: '/dumpster-weight-limit-calculator' },
   openGraph: {
     title: 'Dumpster Weight Limit Calculator',
     description: "Estimate the weight of your debris by material type and see if it fits within your dumpster's weight limit — avoiding costly overage fees.",
@@ -79,7 +79,7 @@ const articleSchema = {
   headline: 'Dumpster Weight Limit Calculator: Estimate Your Load Before You Rent',
   description: 'Free tool to calculate debris weight by material type and check against dumpster weight limits to avoid overage fees.',
   datePublished: '2026-02-24',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-24',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-weight-limit-calculator' },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'How to Dispose of Yard Waste: 6 Options Compared (2026)',
   description:
     'Grass clippings, tree branches, brush, and sod — here are the best ways to dispose of yard waste, including free options, dumpster rental, and curbside pickup.',
-  alternates: { canonical: 'https://dumpsterlisting.com/how-to-dispose-of-yard-waste' },
+  alternates: { canonical: '/how-to-dispose-of-yard-waste' },
   openGraph: {
     title: 'How to Dispose of Yard Waste: Free & Paid Options',
     description: 'Compare curbside pickup, composting, green waste facilities, and dumpster rental for yard waste disposal. Find the cheapest and most convenient option.',
@@ -205,7 +205,7 @@ const articleSchema = {
   headline: 'How to Dispose of Yard Waste: 6 Options Compared',
   description: 'Compare curbside pickup, composting, green waste facilities, wood chippers, and dumpster rental for yard waste disposal.',
   datePublished: '2026-02-23',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-23',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/how-to-dispose-of-yard-waste' },
@@ -329,7 +329,7 @@ export default function HowToDisposeOfYardWastePage() {
               { label: 'Dumpster Size Estimator', href: '/dumpster-size-estimator', desc: 'Find the right size for your landscaping project' },
               { label: 'What Can You Put in a Dumpster?', href: '/what-can-you-put-in-a-dumpster', desc: 'Full list of allowed and prohibited items' },
               { label: 'Dumpster Rental vs Junk Removal', href: '/dumpster-rental-vs-junk-removal', desc: 'Compare costs and convenience' },
-              { label: 'Dumpster Rental Near Me', href: '/dumpster-rental-near-me', desc: 'Find local dumpster rental providers' },
+              { label: 'Landscaping Dumpster Rental', href: '/dumpster-rental-near-me', desc: 'Find local landscaping dumpster providers' },
             ].map((link) => (
               <Link key={link.href} href={link.href}
                 className="flex items-start gap-3 rounded-lg border border-gray-200 bg-white p-3 hover:border-green-300 transition group">

@@ -4,12 +4,12 @@ import { ArrowRight, TrendingUp, TrendingDown, MapPin } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Dumpster Rental Cost by City (2026) — Price Rankings',
+  title: 'Dumpster Rental Cost by City (2026): Most & Least Expensive in America',
   description:
     'See where Americans pay the most and least for dumpster rental. We analyzed pricing across 960 US cities — the most expensive cities cost 85% more than the cheapest.',
-  alternates: { canonical: 'https://dumpsterlisting.com/dumpster-rental-cost-by-city' },
+  alternates: { canonical: '/dumpster-rental-cost-by-city' },
   openGraph: {
-    title: 'Dumpster Rental Cost by City (2026) — Price Rankings',
+    title: 'Dumpster Rental Cost by City (2026): Most & Least Expensive in America',
     description:
       'The most expensive cities (CA, NY, HI) charge 85% more than the cheapest (AR, MS, WV). See the full ranking of 960 US cities.',
     url: '/dumpster-rental-cost-by-city',
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Dumpster Rental Cost by City (2026) — Price Rankings',
+  headline: 'Dumpster Rental Cost by City (2026): Most & Least Expensive in America',
   description:
     'Analysis of dumpster rental pricing across 960 US cities reveals an 85% price gap between the most and least expensive markets.',
   datePublished: '2026-02-26',
-  dateModified: '2026-03-01',
+  dateModified: '2026-02-26',
   author: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   publisher: { '@type': 'Organization', name: 'DumpsterListing', url: 'https://dumpsterlisting.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://dumpsterlisting.com/dumpster-rental-cost-by-city' },

@@ -17,35 +17,12 @@ export const metadata: Metadata = {
   title: 'How Much Does Dumpster Rental Cost? (2026 Price Guide)',
   description:
     'The average dumpster rental costs $300–$550 for a standard 20-yard container. See exact prices by size (10–40 yard), city, and project type — plus tips to avoid hidden fees.',
-  alternates: { canonical: 'https://dumpsterlisting.com/how-much-does-dumpster-rental-cost' },
+  alternates: { canonical: '/how-much-does-dumpster-rental-cost' },
   openGraph: {
     title: 'How Much Does Dumpster Rental Cost? (2026 Price Guide)',
     description:
       'The average dumpster rental costs $300–$550 for a standard 20-yard container. See exact prices by size (10–40 yard), city, and project type — plus tips to avoid hidden fees.',
-    url: 'https://dumpsterlisting.com/how-much-does-dumpster-rental-cost',
-    images: [{
-      url: `/api/og?title=${encodeURIComponent('How Much Does Dumpster Rental Cost?')}&subtitle=${encodeURIComponent('2026 Price Guide · 10–40 yard roll-offs · $250–$750')}`,
-      width: 1200,
-      height: 630,
-      alt: 'How Much Does Dumpster Rental Cost? 2026 Price Guide',
-    }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    images: [`/api/og?title=${encodeURIComponent('How Much Does Dumpster Rental Cost?')}&subtitle=${encodeURIComponent('2026 Price Guide · 10–40 yard roll-offs · $250–$750')}`],
-  },
-}
-
-const articleSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'How Much Does Dumpster Rental Cost? (2026 Price Guide)',
-  description: 'The average dumpster rental costs $300–$550 for a standard 20-yard container. See exact prices by size, city, and project type.',
-  datePublished: '2025-06-01',
-  dateModified: '2026-03-01',
-  author: { '@type': 'Organization', name: 'DumpsterListing.com', url: 'https://dumpsterlisting.com' },
-  publisher: { '@type': 'Organization', name: 'DumpsterListing.com', url: 'https://dumpsterlisting.com' },
-  url: 'https://dumpsterlisting.com/how-much-does-dumpster-rental-cost',
 }
 
 const faqSchema = {
@@ -82,22 +59,6 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'To get the best price on a dumpster rental: (1) Get at least 3 quotes from local companies — prices for the same container can vary 20–30% in the same market. (2) Book mid-week (Tuesday–Thursday) when demand is lower and haulers are more flexible on price. (3) Use your driveway instead of the street to avoid permit fees. (4) Stay under the weight limit — avoid throwing heavy materials like concrete or dirt unless confirmed with the hauler. (5) Return the dumpster on time to avoid daily extension fees.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How much does it cost to rent a dumpster for a day?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Most dumpster rental companies do not offer true single-day pricing — the standard minimum rental period is 3-7 days. However, if you only need the dumpster for one day, you still pay the base rental rate ($275-$450 for a 10-yard, $375-$575 for a 20-yard). Some companies offer same-day delivery and pickup for an additional $25-$75 rush fee. The most cost-effective approach is to book a standard 7-day rental and schedule early pickup when you are done loading.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Have dumpster rental prices increased in 2026?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Dumpster rental prices in 2026 have remained relatively stable compared to 2025 for most markets. The national average for a 20-yard roll-off is still $375–$500. Some markets saw modest increases of 3–7% due to rising fuel and disposal costs, particularly in urban areas. Rural and suburban markets remain the most affordable. Booking in advance and comparing at least 3 local quotes is still the best way to get the lowest available rate in your area.',
       },
     },
   ],
@@ -210,33 +171,6 @@ const CITY_TYPE_COSTS = [
   },
 ]
 
-const STATE_PRICING = [
-  { state: 'California', avg: '$425\u2013$650', notes: 'Higher landfill fees in coastal cities' },
-  { state: 'Texas', avg: '$325\u2013$475', notes: 'Competitive market, many local haulers' },
-  { state: 'Florida', avg: '$350\u2013$500', notes: 'Hurricane season drives peak demand' },
-  { state: 'New York', avg: '$450\u2013$700', notes: 'NYC and Long Island highest in state' },
-  { state: 'Pennsylvania', avg: '$325\u2013$475', notes: 'Moderate pricing, good availability' },
-  { state: 'Illinois', avg: '$350\u2013$525', notes: 'Chicago suburbs more competitive' },
-  { state: 'Ohio', avg: '$300\u2013$425', notes: 'Among the most affordable states' },
-  { state: 'Georgia', avg: '$325\u2013$475', notes: 'Atlanta metro slightly higher' },
-  { state: 'North Carolina', avg: '$300\u2013$450', notes: 'Growing market, competitive pricing' },
-  { state: 'Arizona', avg: '$325\u2013$500', notes: 'Phoenix metro most options' },
-  { state: 'Colorado', avg: '$350\u2013$525', notes: 'Denver metro higher than rural' },
-  { state: 'Washington', avg: '$375\u2013$550', notes: 'Seattle area premium' },
-  { state: 'Michigan', avg: '$300\u2013$425', notes: 'Very competitive pricing' },
-  { state: 'Virginia', avg: '$325\u2013$500', notes: 'Northern VA highest in state' },
-  { state: 'Tennessee', avg: '$275\u2013$425', notes: 'Some of the lowest prices nationally' },
-]
-
-const PROJECT_CARDS = [
-  { project: 'Bathroom Remodel', cost: '$275\u2013$400', size: '10-yard recommended', duration: '3\u20135 day rental', href: '/dumpster-rental/residential' },
-  { project: 'Kitchen Renovation', cost: '$350\u2013$500', size: '15\u201320 yard', duration: '5\u20137 day rental', href: '/dumpster-rental/residential' },
-  { project: 'Whole-House Cleanout', cost: '$400\u2013$575', size: '20-yard', duration: '7\u201310 day rental', href: '/dumpster-rental/residential' },
-  { project: 'Roofing Project', cost: '$350\u2013$500', size: '10\u201320 yard', duration: '3\u20135 day rental', note: 'Shingles are heavy', href: '/dumpster-rental/roofing' },
-  { project: 'Construction / Demo', cost: '$450\u2013$700', size: '30\u201340 yard', duration: '7\u201314 day rental', href: '/dumpster-rental/construction' },
-  { project: 'Yard Waste Cleanup', cost: '$275\u2013$400', size: '10\u201315 yard', duration: '5\u20137 day rental', href: '/how-to-dispose-of-yard-waste' },
-]
-
 const SAVINGS_TIPS = [
   'Get quotes from at least 3 local companies — prices for the same container often vary by 20–30% in the same market.',
   'Book mid-week (Tuesday–Thursday) when haulers have more availability and are more likely to negotiate.',
@@ -248,10 +182,6 @@ const SAVINGS_TIPS = [
 export default function HowMuchDoesDumpsterRentalCostPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -442,80 +372,6 @@ export default function HowMuchDoesDumpsterRentalCostPage() {
             </Link>{' '}
             to find local companies and compare quotes in your area.
           </p>
-        </section>
-
-        {/* Dumpster Rental Prices by State */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            Average Dumpster Rental Cost by State (2026)
-          </h2>
-          <p className="text-gray-600 mb-5 max-w-2xl">
-            Dumpster rental pricing varies significantly from state to state. Below are typical 20-yard
-            roll-off prices across 15 major states, based on 2026 market data.
-          </p>
-          <div className="overflow-x-auto rounded-xl border border-gray-200">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="bg-gray-50 border-b border-gray-200">
-                  <th className="text-left px-5 py-3.5 font-semibold text-gray-700">State</th>
-                  <th className="text-left px-5 py-3.5 font-semibold text-gray-700">20-Yard Avg</th>
-                  <th className="text-left px-5 py-3.5 font-semibold text-gray-700">Notes</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {STATE_PRICING.map((row) => (
-                  <tr key={row.state} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-5 py-3.5 font-bold text-gray-900">{row.state}</td>
-                    <td className="px-5 py-3.5 font-semibold text-green-700">{row.avg}</td>
-                    <td className="px-5 py-3.5 text-gray-600">{row.notes}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-4 text-sm text-gray-600 max-w-2xl">
-            Prices vary within each state &mdash; urban centers and coastal areas tend to be 20&ndash;40%
-            higher than rural and inland regions. For exact pricing in your city, search our directory to
-            compare quotes from local companies.{' '}
-            <Link href="/dumpster-rental" className="text-green-700 font-medium hover:underline">
-              Browse dumpster rental by state
-            </Link>
-          </p>
-        </section>
-
-        {/* Dumpster Rental Cost by Project Type */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            How Much Does a Dumpster Cost for Your Project?
-          </h2>
-          <p className="text-gray-600 mb-6 max-w-2xl">
-            The type of project you are tackling determines both the dumpster size you need and how long
-            you will need it. Here are typical costs for the six most common dumpster rental projects.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {PROJECT_CARDS.map((card) => (
-              <Link
-                key={card.project}
-                href={card.href}
-                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-6 hover:border-green-300 hover:shadow-sm transition-all"
-              >
-                <h3 className="font-bold text-gray-900 text-lg mb-1 group-hover:text-green-700 transition-colors">
-                  {card.project}
-                </h3>
-                <span className="text-2xl font-extrabold text-green-700 mb-3">{card.cost}</span>
-                <div className="space-y-1 text-sm text-gray-600">
-                  <p><span className="font-medium text-gray-700">Size:</span> {card.size}</p>
-                  <p><span className="font-medium text-gray-700">Duration:</span> {card.duration}</p>
-                  {card.note && (
-                    <p className="text-xs text-amber-600 font-medium mt-1">{card.note}</p>
-                  )}
-                </div>
-                <span className="mt-auto pt-4 text-sm font-semibold text-green-700 group-hover:underline inline-flex items-center gap-1">
-                  Learn more <ArrowRight className="h-4 w-4" />
-                </span>
-              </Link>
-            ))}
-          </div>
         </section>
 
         {/* How to Get the Best Price */}
