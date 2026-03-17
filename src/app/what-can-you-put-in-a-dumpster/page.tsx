@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle, AlertTriangle } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import AuthorByline from '@/components/AuthorByline'
 
 export const metadata: Metadata = {
   title: 'What Can You Put in a Dumpster? Full Items List (2026)',
@@ -166,6 +167,7 @@ export default function WhatCanYouPutInADumpsterPage() {
             Most household and construction debris is perfectly fine — but some items are strictly
             prohibited. Here's a complete list of what's accepted and what to do with items that aren't.
           </p>
+          <AuthorByline updatedDate="March 2026" readTimeMin={5} />
         </div>
       </div>
 

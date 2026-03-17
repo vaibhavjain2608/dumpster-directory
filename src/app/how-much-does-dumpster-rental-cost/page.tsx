@@ -10,6 +10,7 @@ import {
   AlertTriangle,
 } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import AuthorByline from '@/components/AuthorByline'
 import PricingBreakdownInfographic from '@/components/infographics/PricingBreakdownInfographic'
 import WhatFitsInfographic from '@/components/infographics/WhatFitsInfographic'
 
@@ -209,7 +210,8 @@ export default function HowMuchDoesDumpsterRentalCostPage() {
             by container size, city type, and project — plus the hidden fees most renters don't see
             coming.
           </p>
-          <div className="mt-6">
+          <AuthorByline updatedDate="March 2026" readTimeMin={8} showMethodology />
+          <div className="mt-2">
             <Link
               href="/dumpster-rental-near-me"
               className="inline-flex items-center gap-2 rounded-xl bg-green-700 px-7 py-3.5 font-bold text-white hover:bg-green-800 transition"

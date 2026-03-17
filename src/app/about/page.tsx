@@ -1,16 +1,46 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
-import { Search, BarChart2, MessageSquare, MapPin, Building2 } from 'lucide-react'
+import Link from 'next/link'
+import { Search, BarChart2, MessageSquare, MapPin, Building2, Database, ShieldCheck, RefreshCw, Mail, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About DumpsterListing — The Dumpster Rental Directory',
+  title: 'About DumpsterListing — America\'s Dumpster Rental Directory',
   description:
-    'DumpsterListing helps homeowners and contractors find local dumpster rental companies fast. Explore our directory of 4,000+ businesses across 500+ cities.',
+    'DumpsterListing is a free directory covering 31,000+ US cities. Learn how we research and verify dumpster rental companies and pricing data.',
   alternates: { canonical: '/about' },
   openGraph: {
-    title: 'About DumpsterListing — The Dumpster Rental Directory',
+    title: 'About DumpsterListing — America\'s Dumpster Rental Directory',
     description:
-      'DumpsterListing helps homeowners and contractors find local dumpster rental companies fast. Explore our directory of 4,000+ businesses across 500+ cities.',
+      'DumpsterListing is a free directory covering 31,000+ US cities. Learn how we research and verify dumpster rental companies and pricing data.',
+  },
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About DumpsterListing',
+  url: 'https://dumpsterlisting.com/about',
+  description: 'DumpsterListing is the largest free directory of dumpster rental companies in the United States, covering 31,000+ cities.',
+  mainEntity: {
+    '@type': 'Organization',
+    '@id': 'https://dumpsterlisting.com/#organization',
+    name: 'DumpsterListing',
+    url: 'https://dumpsterlisting.com',
+    foundingDate: '2026',
+    description: 'The largest free directory of dumpster rental companies in the United States.',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'hello@dumpsterlisting.com',
+      contactType: 'customer support',
+      availableLanguage: 'English',
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'United States',
+    },
+    numberOfEmployees: {
+      '@type': 'QuantitativeValue',
+      value: 5,
+    },
   },
 }
 
@@ -20,7 +50,7 @@ const STEPS = [
     step: '1',
     title: 'Search Your City',
     description:
-      'Enter your city or browse our directory of 500+ cities across the United States to find dumpster rental companies near you.',
+      'Enter your city or browse our directory of 31,000+ cities across the United States to find dumpster rental companies near you.',
   },
   {
     icon: BarChart2,
@@ -39,14 +69,47 @@ const STEPS = [
 ]
 
 const STATS = [
-  { value: '4,000+', label: 'Businesses Listed' },
-  { value: '500+', label: 'Cities Covered' },
+  { value: '31,000+', label: 'US Cities Covered' },
+  { value: '500+', label: 'Verified Companies' },
   { value: '100%', label: 'Free for Renters' },
+]
+
+const METHODOLOGY_POINTS = [
+  {
+    icon: Database,
+    title: 'Data Collection',
+    description:
+      'We compile business listings from public records, Google Business data, state contractor registries, and direct outreach to local haulers across all 50 states.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Verification',
+    description:
+      'Each listing is cross-referenced for accuracy — we verify phone numbers are active, websites resolve correctly, and business addresses are valid before publishing.',
+  },
+  {
+    icon: RefreshCw,
+    title: 'Regular Updates',
+    description:
+      'Pricing data is refreshed monthly using quotes collected from providers in major US markets. Business listings are reviewed quarterly for accuracy.',
+  },
+]
+
+const TRUST_SIGNALS = [
+  'No paid placements — listings are ranked by relevance, not ad spend',
+  'Pricing ranges are based on real quotes, not estimates',
+  'We do not sell your contact information to third parties',
+  'All data is collected from public sources and verified manually',
 ]
 
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+
       {/* Hero */}
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
@@ -59,26 +122,12 @@ export default function AboutPage() {
           </h1>
           <p className="mt-5 text-lg text-gray-600 leading-relaxed max-w-2xl">
             DumpsterListing helps homeowners and contractors find trusted local dumpster rental companies
-            fast — without the runaround. We built the directory we always wished existed.
+            fast — without the runaround. We cover 31,000+ cities across all 50 states.
           </p>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
-
-        {/* Mission */}
-        <section>
-          <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Our Mission</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Finding a dumpster rental company used to mean hours of searching, calling numbers that don't
-            work, and getting wildly inconsistent quotes. We wanted to fix that.
-          </p>
-          <p className="text-gray-600 leading-relaxed">
-            Our mission is simple: make it easy for anyone — homeowners cleaning out a garage, contractors
-            managing a job site, or property managers handling renovations — to find a reliable local dumpster
-            rental company in minutes, not hours.
-          </p>
-        </section>
 
         {/* Stats */}
         <section>
@@ -95,19 +144,54 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* What We Do */}
+        {/* Mission */}
         <section>
-          <h2 className="text-2xl font-extrabold text-gray-900 mb-4">What We Do</h2>
+          <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Our Mission</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            DumpsterListing is a free online directory of dumpster rental companies across the United
-            States. We research and index businesses in over 500 cities so that when you need a dumpster,
-            you can find every option in your area on a single page.
+            Finding a dumpster rental company used to mean hours of searching, calling numbers that don&apos;t
+            work, and getting wildly inconsistent quotes. We wanted to fix that.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Each listing includes key details like phone number, website, star rating, and location — giving
-            you everything you need to make a confident choice without endless Googling. The service is
-            completely free for anyone looking to rent a dumpster.
+            Our mission is simple: make it easy for anyone — homeowners cleaning out a garage, contractors
+            managing a job site, or property managers handling renovations — to find a reliable local dumpster
+            rental company in minutes, not hours. The service is completely free for renters.
           </p>
+        </section>
+
+        {/* Data Methodology */}
+        <section id="methodology">
+          <h2 className="text-2xl font-extrabold text-gray-900 mb-2">How We Research Our Data</h2>
+          <p className="text-gray-600 leading-relaxed mb-8">
+            Our directory covers 31,000+ US cities. Here&apos;s how we collect, verify, and maintain the data
+            you see on every page.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {METHODOLOGY_POINTS.map((point) => {
+              const Icon = point.icon
+              return (
+                <div key={point.title} className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                  <div className="rounded-lg bg-green-100 p-2 w-fit mb-4">
+                    <Icon className="h-5 w-5 text-green-700" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2">{point.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{point.description}</p>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
+        {/* Trust Signals */}
+        <section>
+          <h2 className="text-2xl font-extrabold text-gray-900 mb-6">Our Commitment to Accuracy</h2>
+          <div className="rounded-xl border border-green-100 bg-green-50 p-6 space-y-3">
+            {TRUST_SIGNALS.map((signal) => (
+              <div key={signal} className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                <p className="text-sm text-gray-700">{signal}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* How It Works */}
@@ -138,9 +222,9 @@ export default function AboutPage() {
         <section>
           <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Why We Built DumpsterListing</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            We noticed that searching for "dumpster rental near me" returns a chaotic mix of ads, generic
+            We noticed that searching for &quot;dumpster rental near me&quot; returns a chaotic mix of ads, generic
             directories, and outdated listings. Local service discovery in the dumpster rental space was
-            broken — and small, legitimate businesses were hard to find because they couldn't compete with
+            broken — and small, legitimate businesses were hard to find because they couldn&apos;t compete with
             large national chains on ad spend.
           </p>
           <p className="text-gray-600 leading-relaxed">
@@ -152,32 +236,45 @@ export default function AboutPage() {
 
         {/* Team */}
         <section>
-          <div className="rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm">
-            <div className="relative w-full h-64 sm:h-80">
-              <Image
-                src="/images/about-team.jpg"
-                alt="DumpsterListing customer support team"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-8">
-              <h2 className="text-2xl font-extrabold text-gray-900 mb-4">The Team</h2>
-              <p className="text-gray-600 leading-relaxed">
-                DumpsterListing is built by a small team passionate about making local service discovery easier.
-                We believe that finding a reliable local business should be simple, transparent, and fast —
-                and we're committed to continuously improving the directory to deliver exactly that.
-              </p>
+          <div className="rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+            <h2 className="text-2xl font-extrabold text-gray-900 mb-4">The Team</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              DumpsterListing is built by a small team of researchers and developers focused on making local
+              service discovery easier. We believe finding a reliable local business should be simple,
+              transparent, and fast — and we&apos;re committed to continuously improving the directory.
+            </p>
+            <div className="flex items-center gap-4 p-4 rounded-lg bg-gray-50 border border-gray-200 w-fit">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-700 text-white font-bold text-lg">
+                DL
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900">DumpsterListing Research Team</p>
+                <p className="text-sm text-gray-500">Researching dumpster rental markets across the US</p>
+              </div>
             </div>
           </div>
         </section>
 
+        {/* Contact */}
+        <section>
+          <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Contact Us</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Have a question, a correction, or want to list your business? We&apos;re happy to help.
+          </p>
+          <div className="flex items-center gap-3 text-gray-700">
+            <Mail className="h-5 w-5 text-green-600" />
+            <a href="mailto:hello@dumpsterlisting.com" className="font-medium hover:text-green-700 transition-colors">
+              hello@dumpsterlisting.com
+            </a>
+          </div>
+        </section>
+
         {/* CTA */}
-        <section className="rounded-2xl bg-gradient-to-r from-green-700 to-green-700 px-8 py-12 text-center text-white shadow-lg">
+        <section className="rounded-2xl bg-green-700 px-8 py-12 text-center text-white shadow-lg">
           <h2 className="text-2xl font-extrabold mb-3">Ready to Find a Dumpster?</h2>
           <p className="text-green-100 mb-8 max-w-xl mx-auto">
             Browse our directory and get connected with local dumpster rental companies in your city today.
-            It's completely free.
+            It&apos;s completely free.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -188,7 +285,7 @@ export default function AboutPage() {
             </a>
             <a
               href="/list-your-business"
-              className="inline-flex items-center gap-2 rounded-xl border border-green-400 px-8 py-3.5 text-base font-semibold text-white hover:bg-green-500 transition"
+              className="inline-flex items-center gap-2 rounded-xl border border-green-400 px-8 py-3.5 text-base font-semibold text-white hover:bg-green-600 transition"
             >
               <Building2 className="h-4 w-4" />
               List Your Business

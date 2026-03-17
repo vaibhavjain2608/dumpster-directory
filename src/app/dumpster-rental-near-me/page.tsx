@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { MapPin, ArrowRight, CheckCircle, Star, Shield, Clock, DollarSign, Phone, Search, Truck, Package } from 'lucide-react'
 import LeadForm from '@/components/LeadForm'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import AuthorByline from '@/components/AuthorByline'
 import { getPopularCities } from '@/lib/supabase'
 
 export const metadata: Metadata = {
@@ -100,6 +101,7 @@ export default async function NearMePage() {
             Fill out the form below to get free quotes from dumpster rental companies near your location.
             Or browse by city using the links below.
           </p>
+          <AuthorByline updatedDate="March 2026" readTimeMin={6} />
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle, XCircle } from 'lucide-react'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import AuthorByline from '@/components/AuthorByline'
 
 export const metadata: Metadata = {
   title: 'Dumpster Rental vs Junk Removal: Full Comparison (2026)',
@@ -235,6 +236,7 @@ export default function DumpsterVsJunkRemovalPage() {
             and how much work you want to do yourself. Here's an honest, side-by-side comparison to
             help you decide.
           </p>
+          <AuthorByline updatedDate="March 2026" readTimeMin={6} />
         </div>
       </div>
 
